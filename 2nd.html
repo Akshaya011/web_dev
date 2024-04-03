@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my second Webpage</title>
+        
+    </head>
+    <body>
+
+        <h1>Registration form</h1>
+        <div id="reg.form">
+            <form name="form1" action="" method="">
+                <label for="first.name"></label>
+                <input type="text" name="first.name" placeholder="VIRAT" >
+
+                <!-- <label for="last.name"></label>
+                <input type="text" name="last.name" placeholder="kohli" required> -->
+
+                <div>
+                    <label for="gender-male">Male</label>
+                    <input type="radio" name="gender-choice" value="choice-1">
+
+                    <label for="gender-female">Female</label>
+                    <input type="radio" name="gender-choice" value="choice-2">
+
+                    <label for="gender-other">other</label>
+                    <input type="radio" name="gender-choice" value="choice-3">
+                </div>
+
+                <div>
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" placeholder="xyz@email.com" >
+
+                    <label for="password">password</label>
+                    <input name="pw" type="password" >
+                </div>
+
+                <div>
+
+                    <label for="month">Birthday</label>
+                    <select name="month" >
+                        
+                        <option value="0" selected disabled>month</option>
+                        <option value="jan">january</option>
+                        <option value="feb">february</option>
+                        <option value="mar">march</option>
+                        <option value="apr">april</option>
+                        <option value="may">may</option>
+                        <option value="jun">june</option>
+                        <option value="july">july</option>
+                        <option value="aug">august</option>
+                        <option value="sep">september</option>
+                        <option value="oct">october</option>
+                        <option value="nov">november</option>
+                        <option value="dec">december</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="agree">i agree to all the terms and conditions.</label>
+                    <input type="checkbox" name="agree">
+
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <script>
+            var password= document.form1.pw.value;
+            isvalid(password);
+            function isvalid(password){
+                if(password.length < 8){
+                    alert("password length is small");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

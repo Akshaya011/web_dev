@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycan" width="500px" height="600px" style="border: 3px solid black;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mycan");
+        var ctx = canvas.getContext("2d");
+        // ctx.moveTo(0,0);
+        // ctx.lineTo(400,100);
+        // ctx.stroke();
+
+        // ctx.beginPath();
+        // ctx.arc(95,50,40,0,4);
+
+        // ctx.font= "35px Arial";
+        // ctx.strokeText("NIT Patna",100,250);
+        // ctx.stroke();
+        ctx.fillStyle = "yellow";
+        ctx.createLinearGradient(0,30,10,60);
+        ctx.fillRect(0,30,100,60);
+        ctx.strokeRect(70,100,100,60);
+
+        // ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(20,200);
+        ctx.lineTo(20,300);
+        ctx.lineTo(200,300);
+        ctx.lineTo(80,200);
+        ctx.lineTo(20,200);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(50,320);
+        ctx.lineTo(20,350);
+        ctx.lineTo(80,350);
+        ctx.lineTo(50,320);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.lineWidth = "5";
+        ctx.strokeStyle= "red";
+        ctx.strokeRect(150,330,200,130);
+        
+        ctx.beginPath();
+        ctx.lineWidth = "5";
+        ctx.strokeStyle= "green";
+        ctx.strokeRect(170,355,60,60);
+        
+        ctx.beginPath();
+        ctx.lineWidth = "5";
+        ctx.strokeStyle= "blue";
+        ctx.strokeRect(190,380,140,60);
+        
+        ctx.drawImage(img1.jpg,10,10);
+        
+    </script>
+</body>
+</html>
